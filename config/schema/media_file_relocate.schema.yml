@@ -1,0 +1,10 @@
+media_file_relocate.settings:
+  type: config_object
+  label: 'Media file relocate settings'
+  mapping:
+    patterns:
+      type: sequence
+      label: 'File name patterns'
+      sequence:
+        type: string
+        label: 'Pattern'

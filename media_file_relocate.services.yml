@@ -1,0 +1,13 @@
+services:
+  logger.channel.media_file_relocate:
+    parent: logger.channel_base
+    arguments: ['media_file_relocate']
+
+  media_file_relocate.relocator:
+    class: Drupal\media_file_relocate\FileRelocator
+    arguments:
+      - '@config.factory'
+      - '@file_system'
+      - '@file.repository'
+      - '@logger.channel.media_file_relocate'
+  Drupal\media_file_relocate\FileRelocator: '@media_file_relocate.relocator'

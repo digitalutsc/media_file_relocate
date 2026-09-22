@@ -1,0 +1,7 @@
+media_file_relocate.settings:
+  path: '/admin/config/media/media-file-relocate'
+  defaults:
+    _form: '\Drupal\media_file_relocate\Form\SettingsForm'
+    _title: 'Media file relocate'
+  requirements:
+    _permission: 'administer site configuration'

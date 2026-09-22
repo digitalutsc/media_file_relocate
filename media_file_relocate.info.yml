@@ -1,0 +1,9 @@
+name: 'Media File Relocate'
+type: module
+description: 'Moves media files into a folder derived from a pattern matched in the file name.'
+package: 'Islandora Lite'
+core_version_requirement: ^10.3 || ^11
+dependencies:
+  - drupal:file
+  - drupal:media
+configure: media_file_relocate.settings

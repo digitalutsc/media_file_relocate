@@ -1,0 +1,5 @@
+media_file_relocate.settings:
+  title: 'Media file relocate'
+  description: 'Configure the file name patterns that decide which folder a media file is stored in.'
+  parent: system.admin_config_media
+  route_name: media_file_relocate.settings

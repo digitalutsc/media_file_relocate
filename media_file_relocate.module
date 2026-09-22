@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for the Media File Relocate module.
+ */
+
+declare(strict_types=1);
+
+use Drupal\media\MediaInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave() for media entities.
+ *
+ * Runs on every media save (UI, REST, JSON:API, Islandora Workbench) and moves
+ * any referenced file whose name matches a configured pattern into the folder
+ * named by that pattern. The operation is idempotent: files already in the
+ * right folder are left alone.
+ */
+function media_file_relocate_media_presave(MediaInterface $media): void {
+  \Drupal::service('media_file_relocate.relocator')->relocateMedia($media);
+}
