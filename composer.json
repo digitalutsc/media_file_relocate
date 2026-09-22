@@ -1,0 +1,30 @@
+{
+    "name": "digitalutsc/media_file_relocate",
+    "type": "drupal-module",
+    "description": "Moves media files into a folder derived from a pattern matched in the file name.",
+    "keywords": [
+        "Drupal",
+        "Islandora",
+        "media",
+        "file"
+    ],
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://github.com/digitalutsc/media_file_relocate",
+    "support": {
+        "issues": "https://github.com/digitalutsc/media_file_relocate/issues",
+        "source": "https://github.com/digitalutsc/media_file_relocate"
+    },
+    "authors": [
+        {
+            "name": "The University of Toronto Scarborough Library's Digital Scholarship Unit (DSU)",
+            "email": "digitalscholarship@utsc.utoronto.ca",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "drupal/core": "^10.3 || ^11"
+    },
+    "suggest": {
+        "drush/drush": "^12 || ^13 for the media-file-relocate Drush command"
+    }
+}
